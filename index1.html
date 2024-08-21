@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choix dans l'Inconnu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+<div class="navig">
+    <button class="Accueil" id="mame">
+        Accuiel
+        <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+            <path
+                    clip-rule="evenodd"
+                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                    fill-rule="evenodd"
+            ></path>
+        </svg>
+    </button>
+
+    <div class="d-flex justify-content-end me-5" id="changlit">
+        <!--<div class="form-check form-switch ps-0" >
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+            <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+            <i class="fa-sharp fa-solid fa-sun-bright"></i>
+        </div>-->
+    </div>
+    <div class="form-check form-switch " >
+        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+        <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+        <i class="fa-sharp fa-solid fa-sun-bright"></i>
+    </div>
+</div>
+<h1><i>OMBRES DE LA RENAISSANCE</i></h1>
+<div id="texte">
+    <p id="histoire">Bienvenue <br>
+        Te voici dans le repère du serpent a 3 têtes tu as <span>2 chemins </span> <br>
+        l’un d’eux te ramène vers l’ile des sirènes ou tu dois te rendre et l’autre te ramène directement vers le serpent En sachant que <br>
+        le chemin de C-gauche te ramènera vers l’habitat des rongeurs <br>
+        le chemin de C-droite vers le village des pêcheurs
+    </p>
+    <div>
+        <img id="image" src="image/perso-2.png" alt="Image 1">
+        <img style="display: none" id="image1" src="https://tse1.mm.bing.net/th?id=OIP.ZpaC6NT1Rx3oJuQsHVZfqwHaEo&pid=Api&rs=1&c=1&qlt=95&w=189&h=118" alt="Image 1">
+    </div>
+</div>
+<div id="choix">
+    <button class="btn" onclick="choisir('gauche')">C-gauche</button>
+    <button class="btn" onclick="choisir('droite')">C-droite</button>
+    <button class="btn" id="retour" style="display:none;" onclick="retour()">Recommencer</button>
+</div>
+<script src="script.js"></script>
+<script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/ab09c2f170.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
